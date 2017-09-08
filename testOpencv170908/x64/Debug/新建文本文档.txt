@@ -1,0 +1,1 @@
+E:\ProgramFiles\VSProjects\OpenCVProjects\testOpencv170908\x64\Debug\testOpencv.exe E:\FirstYear\MachineVision\SampleImages\crops001.jpg
