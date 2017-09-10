@@ -71,7 +71,8 @@ void ImageProcess::GetCropRows()
 
 	/// 绘出轮廓及其可倾斜的边界框和边界椭圆
 	Mat drawing = Mat::zeros(thresh_image_.size(), CV_8UC3);
-	Point p1, p2;
+	Point2d pc, p1, p2;
+	double line_angle;
 	for (int i = 0; i< contours.size(); i++)
 	{
 		if (arcLength(contours[i], 1) >crop_circle)
@@ -80,18 +81,19 @@ void ImageProcess::GetCropRows()
 			// contour
 			drawContours(drawing, contours, i, color, 1, 8, vector<Vec4i>(), 0, Point());
 			// ellipse
-			ellipse(drawing, minEllipse[i], color, 2, 8);
-			p1 = minEllipse[i].center;
-			p2.x = p1.x;
-			p2.y=p1.y+tan(minEllipse[i].angle / 180);
-			Vec4i short_line = {p1.x,p1.y,p2.x,p2.y};
-			Vec4i long_line = LengthenLine(short_line,drawing);
-			p1.x = long_line[0]; p1.y = long_line[1]; p2.x = long_line[2]; p2.y = long_line[3];
+			//ellipse(drawing, minEllipse[i], color, 2, 8);
+			pc = minEllipse[i].center;
+			line_angle = (minEllipse[i].angle+90) / 180 * 3.1415;
+			p1.x=pc.x+ minEllipse[i].size.height*0.5*cos(line_angle);
+			p1.y= pc.y + minEllipse[i].size.height*0.5*sin(line_angle);
+			p2.x = pc.x - minEllipse[i].size.height*0.5*cos(line_angle);
+			p2.y = pc.y - minEllipse[i].size.height*0.5*sin(line_angle);
+			//ellipse axis;
 			line(drawing, p1, p2, color, 1);
 			// rotated rectangle
-			Point2f rect_points[4]; minRect[i].points(rect_points);
+			/*Point2f rect_points[4]; minRect[i].points(rect_points);
 			for (int j = 0; j < 4; j++)
-				line(drawing, rect_points[j], rect_points[(j + 1) % 4], color, 1, 8);
+				line(drawing, rect_points[j], rect_points[(j + 1) % 4], color, 1, 8);*/
 		}		
 	}
 
