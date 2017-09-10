@@ -1,0 +1,11 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(lineDetectXueJinlin.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  CameraParams.cpp
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(56): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(86): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(87): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(122): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(123): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(126): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\linedetect_xuejinlin\cameraparams.cpp(127): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  lineDetect_XueJinlin.vcxproj -> E:\ProgramFiles\VSProjects\OpenCVProjects\testOpencv170908\x64\Debug\lineDetect_XueJinlin.exe
+  lineDetect_XueJinlin.vcxproj -> E:\ProgramFiles\VSProjects\OpenCVProjects\testOpencv170908\x64\Debug\lineDetect_XueJinlin.pdb (Partial PDB)

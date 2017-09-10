@@ -9,6 +9,8 @@ int PreProcess()
 {
 	return 0;
 }
+
+
 void ImageProcess:: GreyTransform()
 {
 	int channels = src_imag_.channels();
@@ -20,8 +22,11 @@ void ImageProcess:: GreyTransform()
 		n_rows = 1;
 	}
 	int i, j,tem;
+	// size
+	int L = 10;
 	uchar* p;
 	uchar* q;
+	uchar* r;
 	for (i = 0; i < n_rows; ++i)
 	{
 		p = src_imag_.ptr<uchar>(i);

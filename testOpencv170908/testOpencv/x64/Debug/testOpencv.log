@@ -1,8 +1,9 @@
 ﻿  ImageProcess.cpp
-e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(31): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(109): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(111): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(36): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(29): warning C4101: “r”: 未引用的局部变量
 e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(115): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
 e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(117): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(121): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\programfiles\vsprojects\opencvprojects\testopencv170908\testopencv\imageprocess.cpp(123): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
   testOpencv.vcxproj -> E:\ProgramFiles\VSProjects\OpenCVProjects\testOpencv170908\x64\Debug\testOpencv.exe
   testOpencv.vcxproj -> E:\ProgramFiles\VSProjects\OpenCVProjects\testOpencv170908\x64\Debug\testOpencv.pdb (Partial PDB)

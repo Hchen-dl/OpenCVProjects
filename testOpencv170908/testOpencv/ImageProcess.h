@@ -33,6 +33,8 @@ public:
 	void OTSUBinarize();
 	void GetCropRows();
 	Vec4i LengthenLine(Vec4i line, Mat draw);
+	void CropSegment();
+
 };
 
 int PreProcess();
