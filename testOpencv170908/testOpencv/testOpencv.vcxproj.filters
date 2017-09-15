@@ -21,9 +21,15 @@
     <ClCompile Include="ImageProcess.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GetImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImageProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetImage.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

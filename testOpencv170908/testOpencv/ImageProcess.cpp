@@ -48,11 +48,12 @@ void ImageProcess:: GreyTransform()
 void ImageProcess::OTSUBinarize()
 {
 	threshold(grey_image_, thresh_image_, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+
 }
 
 void ImageProcess::GetCropRows()
 {
-	int crop_circle=100;
+	int crop_circle=15;
 	RNG rng(12345);
 	vector<vector<Point> > contours;
 	vector<Vec4i> hierarchy;
@@ -94,7 +95,7 @@ void ImageProcess::GetCropRows()
 			p2.x = pc.x - minEllipse[i].size.height*0.5*cos(line_angle);
 			p2.y = pc.y - minEllipse[i].size.height*0.5*sin(line_angle);
 			//ellipse axis;
-			line(drawing, p1, p2, color, 1);
+			//line(drawing, p1, p2, color, 1);
 			// rotated rectangle
 			/*Point2f rect_points[4]; minRect[i].points(rect_points);
 			for (int j = 0; j < 4; j++)
@@ -124,4 +125,16 @@ Vec4i ImageProcess:: LengthenLine(Vec4i line,Mat draw)
 		line[3] = draw.rows;
 	}
 	return v;
+}
+void ImageProcess::DialteImage()
+{
+	int dilation_type= MORPH_CROSS;
+	int dilation_elem = 1;
+	int dilation_size = 2;
+	Mat element = getStructuringElement(dilation_type,
+		Size(2 * dilation_size + 1, 2 * dilation_size + 1),
+		Point(dilation_size, dilation_size));
+	/// 膨胀操作
+	dilate(thresh_image_, thresh_image_, element);
+	erode(thresh_image_, thresh_image_, element);
 }

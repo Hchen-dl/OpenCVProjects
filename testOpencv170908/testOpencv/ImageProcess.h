@@ -31,6 +31,7 @@ public:
 	}
 	void GreyTransform();
 	void OTSUBinarize();
+	void DialteImage();
 	void GetCropRows();
 	Vec4i LengthenLine(Vec4i line, Mat draw);
 	void CropSegment();
