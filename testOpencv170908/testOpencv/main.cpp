@@ -7,7 +7,7 @@ bool is_big=false;
 
 int main(int argc,char** argv)
 {
-	//GetImage get_image;
+	GetImage get_image;
 	//get_image.getImage();
 	//src=get_image.image_;
 	Mat src = imread("E:\\FirstYear\\MachineVision\\SampleImages\\crops002.jpg", 1);
