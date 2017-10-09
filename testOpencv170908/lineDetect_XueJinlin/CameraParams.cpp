@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	Mat src = imread("E:\\FirstYear\\MachineVision\\SampleImages\\crops002.jpg", 1);
+	Mat src = imread("C:\\Users\\ahaiya\\Documents\\FirstYear\\MachineVision\\SampleImages\\crops002.jpg");
 	namedWindow("calibration", CV_WINDOW_AUTOSIZE);
 	if (!src.data)return -1;
 	CameraParams cameraparams(src);

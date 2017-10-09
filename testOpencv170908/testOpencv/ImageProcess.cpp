@@ -53,7 +53,7 @@ void ImageProcess::OTSUBinarize()
 
 void ImageProcess::GetCropRows()
 {
-	int crop_circle=15;
+	int crop_circle=30;
 	RNG rng(12345);
 	vector<vector<Point> > contours;
 	vector<Vec4i> hierarchy;
@@ -95,7 +95,7 @@ void ImageProcess::GetCropRows()
 			p2.x = pc.x - minEllipse[i].size.height*0.5*cos(line_angle);
 			p2.y = pc.y - minEllipse[i].size.height*0.5*sin(line_angle);
 			//ellipse axis;
-			//line(drawing, p1, p2, color, 1);
+			line(drawing, p1, p2, color, 1);
 			// rotated rectangle
 			/*Point2f rect_points[4]; minRect[i].points(rect_points);
 			for (int j = 0; j < 4; j++)

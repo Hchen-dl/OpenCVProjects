@@ -11,6 +11,6 @@ class GetImage
 {
 public:
 	Mat image_;
-	GetImage();
+	void getImage();
 };
 #endif // !TESTOPENCV170908_TESTOPENCV_GETIMAGE_H_

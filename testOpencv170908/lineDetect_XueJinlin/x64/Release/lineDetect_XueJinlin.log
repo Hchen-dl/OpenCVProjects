@@ -1,0 +1,12 @@
+﻿  CameraParams.cpp
+CameraParams.cpp(56): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CameraParams.cpp(86): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+CameraParams.cpp(87): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+CameraParams.cpp(122): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+CameraParams.cpp(123): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+CameraParams.cpp(126): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+CameraParams.cpp(127): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  All 739 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  lineDetect_XueJinlin.vcxproj -> C:\Users\ahaiya\Documents\VSProjectes\OpenCVProjects\testOpencv170908\x64\Release\lineDetect_XueJinlin.exe
